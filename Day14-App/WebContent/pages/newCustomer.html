@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<br>
+<br>
+
+<h1 align="center">Customer Application</h1>
+
+<br>
+<hr>
+
+<a href="newCustomer.html">New Customer</a> &nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;
+<a href="../ShowAllServlet">Show All</a> &nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;
+<a href="#">Search</a> &nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;
+<a href="#">Update</a> &nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;
+
+<hr>
+
+<div>
+
+<form name="custForm" method="post" action="../SaveCustomerServlet">
+
+
+<table>
+	<tr>
+		<td>Customer Id</td>
+		<td>
+		<input type="text" name="custId" size="20"/>
+		</td>
+		
+	</tr>
+	
+	<tr>
+		<td>Customer Name</td>
+		<td>
+		<input type="text" name="custName" size="20"/>
+		</td>
+		
+	</tr>
+	
+	<tr>
+		<td>Customer Type</td>
+		<td>
+		 <select name="custType">
+		 	<option value="Silver">Silver </option>
+		 		<option value="Gold">Gold </option>
+		 			<option value="Diamond">Diamond </option>
+		 				<option value="Platinum">Platinum  </option>
+		 				
+		 </select>
+		</td>
+		
+	</tr>
+	
+	<tr>
+		<td>Registration Date</td>
+		<td>
+		<input type="date" name="regDate"  />
+		</td>
+		
+	</tr>
+	
+	<tr>
+		<td>Gender</td>
+		<td>
+		<input type="radio" name="gender"  value="Male"/> Male
+		<input type="radio" name="gender"  value="Female"/> Female
+		
+		</td>
+		
+	</tr>
+	
+	
+	<tr>
+		<td></td>
+		<td>
+			<input type="submit" name="save" value="Save"/>
+			<input type="reset" name="clear" value="Clear"/>
+		</td>
+	</tr>
+	
+
+</table>
+
+
+
+
+
+</form>
+
+
+</div>
+</body>
+</html>
